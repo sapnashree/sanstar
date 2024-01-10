@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Sanstar  </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+        #myImg {
+      border-radius: 0px;
+      cursor: pointer;
+      transition: 0.3s;    padding: 8px
+    }
+    
+    #myImg:hover {
+      opacity: 0.7;
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 6;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+    .modal-content,
+    #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+      to {
+        transform: scale(1)
+      }
+    }
+    
+    .close {
+      position: absolute;
+      top: 90px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row-pg {
+      display: -ms-flexbox; 
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 4px;
+      margin-left: auto;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .column-pg {
+      -ms-flex: 25%;
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+      flex-direction: column;
+      column-gap: 25px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+      .enap-gallery-img {
+        padding: 5px;
+        }
+    }
+    @media screen and (max-width: 800px) {
+      .column-pg {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        column-gap: 5px;
+        flex-direction: column;
+      }
+      .row-pg {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .column-pg {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        column-gap: 10px;
+        flex-direction: column;
+      }
+      .row-pg {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <!--  Preloader Start  -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--  Preloader End  -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>SANSTAR</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home
+                 
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About Us
+               
+                </a>
+
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Our Services</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="gallery.html">Gallery
+                    <span class="sr-only">(current)</span>
+                </a>
+              </li>                         
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Gallery</h1>
+            <span>Visual Stories in Every Frame: Explore Our Gallery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <main id="main">
+  <div class="row-pg" style="padding: 50px;"> 
+  <div class="column-pg">
+    <img class="myImages" id="myImg" src="assets/images/service-1.jpg" href="#popup1" style="width:100%">
+     <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+       <img class="modal-content" id="img01">
+     </div>
+    <img class="myImages" id="myImg" src="assets/images/service-2.jpg" style="width:100%">
+    <img class="myImages" id="myImg" src="assets/images/service-3.jpg" style="width:100%">
+    <img class="myImages" id="myImg" src="assets/images/service-5.jpg" style="width:100%">
+    <img class="myImages" id="myImg" src="assets/images/service-4.jpg" style="width:100%">
+ </div>
+  <!-- COLUMN 2 -->
+  <div class="column-pg">
+    <img class="myImages" id="myImg" src="assets/images/service-6.jpg" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
+    <img class="myImages" id="myImg" src="assets/images/service-2.jpg" style="width:100%">
+    <img class="myImages" id="myImg" src="assets/images/service-3.jpg" style="width:100%">
+    <img class="myImages" id="myImg" src="assets/images/service-5.jpg" style="width:100%">
+    <img class="myImages" id="myImg" src="assets/images/service-4.jpg" style="width:100%">
+  </div>  
+  <!-- COLUMN 3 -->
+  <div class="column-pg">
+    <img class="myImages" id="myImg" src="assets/images/service-3.jpg" style="width:100%">
+       <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="img01">
+       </div>
+       <img class="myImages" id="myImg" src="assets/images/service-2.jpg" style="width:100%">
+       <img class="myImages" id="myImg" src="assets/images/service-3.jpg" style="width:100%">
+       <img class="myImages" id="myImg" src="assets/images/service-5.jpg" style="width:100%">
+       <img class="myImages" id="myImg" src="assets/images/service-4.jpg" style="width:100%">
+ </div>
+  <!-- COLUMN 4 -->
+  <div class="column-pg">
+    <img class="myImages" id="myImg" src="assets/images/service-4.jpg" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+     </div>
+     <img class="myImages" id="myImg" src="assets/images/service-2.jpg" style="width:100%">
+     <img class="myImages" id="myImg" src="assets/images/service-3.jpg" style="width:100%">
+     <img class="myImages" id="myImg" src="assets/images/service-5.jpg" style="width:100%">
+     <img class="myImages" id="myImg" src="assets/images/service-4.jpg" style="width:100%">
+  </div>
+</div>
+  </main>
+   <!-- Footer Starts Here -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-item">
+          <h4>SANSTAR</h4>
+          <p>SANSTAR INDUSTRIES is committed to implementing rigorous total quality management systems to meet client requirements. </p>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Useful Links</h4>
+          <ul class="menu-list">
+            <li><a href="#">Manufacturing Unit</a></li>
+            <li><a href="#">Heavy Fabrication</a></li>
+            <li><a href="#">Heavy Machining</a></li>
+            <li><a href="#">Custimized Eng Projects</a></li>
+            <li><a href="#">Structural Fabrication</a></li>
+            <li><a href="#">Tubesheet Drilling</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Additional Pages</h4>
+          <ul class="menu-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Quick Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item last-item">
+          <h4>Contact Us</h4>
+          <ul class="menu-list">
+            <li><a href="#">Plot No.149 , J-Block Bhosari MIDC Pune-26</a></li>
+            <li><a href="#">+91 9763479800</a></li>
+            <li><a href="#">+91 9823291700</a></li>
+            <li><a href="#">sanstarindustries@gmail.com</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>  
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2024 Sanstar - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">Designz Factory</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Additional Scripts -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/accordions.js"></script>
+  <script>
+    var modal = document.getElementById('myModal');
+    var images = document.getElementsByClassName('myImages');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+   for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+     img.onclick = function(evt) {
+       modal.style.display = "block";
+       modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+  }
+   }
+   var span = document.getElementsByClassName("close")[0];
+   span.onclick = function() {
+     modal.style.display = "none";
+    }
+</script>
+</body>
+</html>

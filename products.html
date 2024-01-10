@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Sanstar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+        :root{
+        --bs-white: #fff;
+        --bs-gray: #6c757d;
+        --bs-hover:#192a56;
+        --bs-primary:#565c64;
+    }
+    .product-grid{
+      background-color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
+    .product-grid .product-image{
+      overflow: hidden;
+      position: relative;
+    }
+    .product-grid .product-image a.image{ display: block; }
+    .product-grid .product-image img{
+      width: 100%;
+      height: auto;
+    }
+    .product-grid .product-image .pic-1{ transition: all 0.3s ease 0s; }
+    .product-grid .product-image:hover .pic-1{ transform: translateX(100%); }
+    .product-grid .product-image .pic-2{
+      width: 100%;
+      height: 100%;
+      transform: translateX(-101%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    .product-grid .product-image:hover .pic-2{ transform: translateX(0); }
+    .product-grid .product-sale-label{
+      color: #fff;
+      background: var(--bs-hover);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 2px 8px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    .product-grid .product-like-icon{
+      color: #696969;
+      font-size: 22px;
+      line-height: 20px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+    .product-grid .product-like-icon:hover{ color: var(--bs-hover); }
+    .product-grid .product-like-icon:before,
+    .product-grid .product-like-icon:after{
+      content: attr(data-tip);
+      color: #fff;
+      background-color: #000;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 7px 7px 5px;
+      visibility: hidden;
+      position: absolute;
+      right: 0;
+      top: 15px;
+      transition: all 0.3s ease 0s;
+    }
+    .product-grid .product-like-icon:after{
+      content: '';
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      transform: translateX(-50%) rotate(45deg);
+      right: auto;
+      left: 50%;
+      top: 15px;
+      z-index: -1;
+    }
+    .product-grid .product-like-icon:hover:before,
+    .product-grid .product-like-icon:hover:after{
+      visibility: visible;
+      top: 30px;
+    }
+    .product-grid .product-links{
+      width: 170px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      opacity: 0;
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transition: all 0.3s ease 0s;
+    }
+    .product-grid:hover .product-links{
+      bottom: 40px;
+      opacity: 1;
+    }
+    .product-grid .product-links li{
+      display: inline-block;
+      margin: 0 2px;
+    }
+    .product-grid .product-links li a{
+      color: #fff;
+      background: #192a56;
+      font-size: 16px;
+      line-height: 48px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: block;
+      transition: all 0.3s ease 0s;
+    }
+    .product-grid:hover .product-links li a:hover{ background: #333; }
+    .product-grid .product-content{
+      text-align: left;
+      padding: 15px 0 0;
+    }
+    .product-grid .title{
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin: 0 0 8px;
+    }
+    .product-grid .title a{
+      color: #333;
+      transition: all 0.3s ease 0s;
+      text-decoration:none;
+      font-weight:600;
+      font-size:18px;
+    }
+    .product-grid .title a:hover{ color: var(--bs-hover); }
+    .product-grid .price{
+      color: var(--bs-hover);
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .product-grid .price span{
+      color: #555;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: line-through;
+      margin: 0 5px 0 0;
+    }
+    @media screen and (max-width: 990px){
+      .product-grid{ margin: 0 0 30px; }
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Preloader Start  -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--  Preloader End-->
+
+    <!-- Header -->
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>SANSTAR</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home
+                 
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About Us
+               
+                </a>
+
+              </li>  
+              <li class="nav-item ">
+                <a class="nav-link" href="services.html">Our Services</a>
+              </li>  
+              <li class="nav-item active">
+                <a class="nav-link" href="products.html">Products
+                    <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item ">
+                <a class="nav-link" href="gallery.html">Gallery
+                   
+                </a>
+              </li>                         
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">Contact Us
+                  
+                </a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+     <!-- Page Content -->
+     <div class="page-heading header-text" style="background:linear-gradient(#b1adad21, #b1b1b140), url(assets/images/product_banner.jpg);background-size: cover;background-repeat: no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Products </h1>
+              <span>Quality First, Products Beyond Compare</span>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- products -->
+<div class="container" style="padding: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="section-title text-center mb-4 pb-2">
+                <h1 class="title mb-4">OUR PRODUCTS</h1>
+                <p class="text-muted para-desc mx-auto mb-0">Exceptional Quality, Endless Possibilities: Your Journey with Our Products Begins Here.</p>
+            </div>
+        </div><!--end col-->
+    </div><!--end row-->
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                        <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Damper</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                        <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Damper</a></h3>
+                 </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                        <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Damper</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                        <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                    </a> 
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Damper</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                      <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                  </a> 
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Damper</a></h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                      <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                  </a> 
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Damper</a></h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                      <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                  </a> 
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Damper</a></h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                      <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                  </a> 
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Damper</a></h3>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+  <!-- Footer Starts Here -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-item">
+          <h4>SANSTAR</h4>
+          <p>SANSTAR INDUSTRIES is committed to implementing rigorous total quality management systems to meet client requirements. </p>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Useful Links</h4>
+          <ul class="menu-list">
+            <li><a href="#">Manufacturing Unit</a></li>
+            <li><a href="#">Heavy Fabrication</a></li>
+            <li><a href="#">Heavy Machining</a></li>
+            <li><a href="#">Custimized Eng Projects</a></li>
+            <li><a href="#">Structural Fabrication</a></li>
+            <li><a href="#">Tubesheet Drilling</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Additional Pages</h4>
+          <ul class="menu-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Quick Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item last-item">
+          <h4>Contact Us</h4>
+          <ul class="menu-list">
+            <li><a href="#">Plot No.149 , J-Block Bhosari MIDC Pune-26</a></li>
+            <li><a href="#">+91 9763479800</a></li>
+            <li><a href="#">+91 9823291700</a></li>
+            <li><a href="#">sanstarindustries@gmail.com</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>  
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2024 Sanstar - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">Designz Factory</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Additional Scripts -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/accordions.js"></script>
+</body>
+</html>
