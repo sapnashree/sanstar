@@ -514,7 +514,7 @@ ul.slick-dots {
 /* Request Form */
 
 .request-form {
-	background-color: #b83c31;
+	background-color: black;
 	padding: 40px 0px;
 	color: #fff;
 }
@@ -757,7 +757,8 @@ ul.slick-dots {
 	background-color: #9b9b9b;
 	padding: 60px;
 	border-radius: 5px;
-	text-align: center;
+	text-align: center;width: 50%;
+    margin-left: 25%;
 }
 
 .callback-form .contact-form input {
