@@ -235,7 +235,8 @@ header {
     transition: all 0.3s ease-in-out 0s;
 }
 header .navbar {
-	padding: 20px 0px;
+	/* padding: 20px 0px; */
+	height: 80px;
 }
 .background-header .navbar {
 	padding: 10px 0px;
@@ -243,14 +244,15 @@ header .navbar {
 .background-header {
 	top: 0;
 	position: fixed;
-	background-color: #fff!important;
+	background-color: black !important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
 	color: #b83c31!important;
 }
 .background-header .navbar-nav a.nav-link {
-	color: #1e1e1e!important;
+	/* color: #1e1e1e!important; */
+	color: white;
 }
 .background-header .navbar-nav .nav-link:hover,
 .background-header .navbar-nav .active>.nav-link,
@@ -261,7 +263,7 @@ header .navbar {
 }
 .navbar .navbar-brand {
 	float: 	left;
-	margin-top: 12px;
+	margin-top:4px;
 	outline: none;
 }
 .navbar .navbar-brand h2 {
@@ -757,13 +759,14 @@ ul.slick-dots {
 	background-color: #9b9b9b;
 	padding:30px;
 	border-radius: 5px;
-	text-align: center;width: 50%;
-    margin-left: 25%;
+	text-align: center;
+	width:70%;
+    margin-left:15%;
 }
 
 .callback-form .contact-form input {
 	border-radius: 20px;
-	height: 40px;
+	height:50px;
 	line-height: 40px;
 	display: inline-block;
 	padding: 0px 15px;
@@ -1335,18 +1338,31 @@ footer .contact-form button.filled-button:hover {
 
 .frmm_1{
 	height: 410px;
-	margin-top: 75px;
+	margin-top: 75px;margin-left: 50px;
 }
 .sahihai{
 	margin-top: 20px;
 }
 .logo_hai{
-	width: 220px;
+	width: 200px;
+}
+.thakgi{
+	background-color: white;
+    width: 100%;
+    position: absolute;
+    /* border: 1px soliD red; */
+    margin-left: -15px;
+    padding-bottom: 25px !important;
+    /* margin-top: 10px; */
+    color: grey;
+}
+.section-heading  .kya_hua{
+	margin-left: -63px;
 }
 @media (max-width: 768px) {
 	.frmm_1{
 		height: 430px;
-		margin-top: 0px;
+		margin-top: 0px;margin-left:0px;
 	}
 	.contact-information {
 		border-right:none;
@@ -1361,5 +1377,11 @@ footer .contact-form button.filled-button:hover {
 	}
 	.logo_hai {
 		width: 120px;
+	}
+	.thakgi{
+		display: none;
+	}
+	.section-heading  .kya_hua{
+		margin-left:0px;
 	}
 }
