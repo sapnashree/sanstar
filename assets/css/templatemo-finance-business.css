@@ -61,7 +61,7 @@ a.border-button:hover {
 
 .section-heading {
 	text-align: center;
-	margin-bottom:40px;
+	margin-bottom:20px;
 }
 
 .section-heading h2 {
@@ -77,7 +77,7 @@ a.border-button:hover {
 
 .section-heading span {
 	display: block;
-	margin-top: 15px;
+	/* margin-top: 15px; */
 	text-transform: uppercase;
 	font-size: 15px;
 	color: #666;
@@ -436,7 +436,7 @@ ul.slick-dots {
 	text-align: left;
   	width: 75%;
   	position: absolute;
-  	top: 50%;
+  	top: 60%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
@@ -750,12 +750,12 @@ ul.slick-dots {
 }
 
 .callback-form {
-	padding: 70px;
+	padding: 40px;
 }
 
 .callback-form .contact-form {
 	background-color: #9b9b9b;
-	padding: 60px;
+	padding:30px;
 	border-radius: 5px;
 	text-align: center;width: 50%;
     margin-left: 25%;
@@ -772,7 +772,7 @@ ul.slick-dots {
 	text-transform: none;
 	box-shadow: none;
 	border: none;
-	margin-bottom: 35px;
+	margin-bottom:20px;
 }
 
 .callback-form .contact-form input:focus {
@@ -793,7 +793,7 @@ ul.slick-dots {
 	text-transform: none;
 	box-shadow: none;
 	border: none;
-	margin-bottom: 35px;
+	margin-bottom:20px;
 }
 
 .callback-form .contact-form textarea:focus {
@@ -1116,7 +1116,7 @@ footer .contact-form button.filled-button:hover {
 /* Single Service */
 
 .single-services {
-	margin-top: 140px;
+	padding: 50px;
 }
 
 #tabs ul {
@@ -1184,11 +1184,11 @@ footer .contact-form button.filled-button:hover {
 /* Contact Information */
 
 .contact-information {
-	margin-top: 140px;
+	border-right:3px solid #b7b7b7;
 }
 
 .contact-information .contact-item {
-	padding: 30px;
+	padding: 15px;
     background-color: #f1f1f1;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -1197,19 +1197,19 @@ footer .contact-form button.filled-button:hover {
 
 .contact-information .contact-item i {
 	color: #b83c31;
-	font-size: 48px;
-	margin-bottom: 40px;
+	font-size:25px;
+	margin-bottom: 5px;
 }
 
 .contact-information .contact-item h4 {
-	font-size: 20px;
+	font-size:18px;
 	font-weight: 700;
 	letter-spacing: 0.25px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 
 .contact-information .contact-item p {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .contact-information .contact-item a {
@@ -1262,7 +1262,7 @@ footer .contact-form button.filled-button:hover {
 		margin-bottom: 30px;
 	}
 	.more-info .right-content  {
-		padding: 30px;
+		padding: 10px;
 	}
 	footer {
 		padding: 80px 0px 20px 0px;
@@ -1295,7 +1295,7 @@ footer .contact-form button.filled-button:hover {
 	.navbar .navbar-brand {
 		position: absolute;
 		left: 30px;
-		top: 10px;
+		top: 0px;
 	}
 	.navbar .navbar-brand {
 		width: auto;
@@ -1330,5 +1330,36 @@ footer .contact-form button.filled-button:hover {
 	.navbar .navbar-nav .show>.nav-link {
 		color: #b83c31!important;
 		border-bottom: none!important;
+	}
+}
+
+.frmm_1{
+	height: 410px;
+	margin-top: 75px;
+}
+.sahihai{
+	margin-top: 20px;
+}
+.logo_hai{
+	width: 220px;
+}
+@media (max-width: 768px) {
+	.frmm_1{
+		height: 430px;
+		margin-top: 0px;
+	}
+	.contact-information {
+		border-right:none;
+	}
+	.callback-form .contact-form {
+		background-color: #9b9b9b;
+		padding: 30px;
+		border-radius: 5px;
+		text-align: center;
+		width: 100%;
+		margin-left: 0;
+	}
+	.logo_hai {
+		width: 120px;
 	}
 }
