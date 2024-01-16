@@ -231,7 +231,7 @@
     </header>
     
      <!-- Page Content -->
-     <div class="page-heading header-text" style="background:linear-gradient(#b1adad21, #b1b1b140), url(assets/images/product_banner.jpg);background-size: cover;background-repeat: no-repeat;">
+     <div class="page-heading header-text" style="background:linear-gradient(#0000006e, #00000082), url(assets/images/product_banner.jpg);background-size: cover;background-repeat: no-repeat;">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -261,7 +261,7 @@
                     </a>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Damper</a></h3>
+                    <h3 class="title"><a href="#">Pressure Vessel</a></h3>
                 </div>
             </div>
         </div>
@@ -274,7 +274,7 @@
                     </a>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Damper</a></h3>
+                    <h3 class="title"><a href="#">Base Frame</a></h3>
                  </div>
             </div>
         </div>
@@ -287,7 +287,7 @@
                     </a>
                 </div>
                 <div class="product-content">
-                    <h3 class="title"><a href="#">Damper</a></h3>
+                    <h3 class="title"><a href="#">Gate Value</a></h3>
                 </div>
             </div>
         </div>
@@ -313,7 +313,7 @@
                   </a> 
               </div>
               <div class="product-content">
-                  <h3 class="title"><a href="#">Damper</a></h3>
+                  <h3 class="title"><a href="#">Non- Satndard Flanges</a></h3>
               </div>
           </div>
       </div>
@@ -326,7 +326,7 @@
                   </a> 
               </div>
               <div class="product-content">
-                  <h3 class="title"><a href="#">Damper</a></h3>
+                  <h3 class="title"><a href="#">Filter Body and Bonet</a></h3>
               </div>
           </div>
       </div>
@@ -339,7 +339,7 @@
                   </a> 
               </div>
               <div class="product-content">
-                  <h3 class="title"><a href="#">Damper</a></h3>
+                  <h3 class="title"><a href="#">Stainer</a></h3>
               </div>
           </div>
       </div>
@@ -352,10 +352,23 @@
                   </a> 
               </div>
               <div class="product-content">
-                  <h3 class="title"><a href="#">Damper</a></h3>
+                  <h3 class="title"><a href="#">Discharge head</a></h3>
               </div>
           </div>
       </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                    <img class="pic-2" src="https://img.freepik.com/premium-photo/bike-damper-spring-seethrough-surface_1024117-11684.jpg?w=740">
+                </a> 
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Column pipe </a></h3>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
   <!-- Footer Starts Here -->
@@ -425,5 +438,28 @@
   <script src="assets/js/owl.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/accordions.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var logo = $(".logo_hai");
+      var scrolled = false;
+  
+      // Change logo on scroll
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          if (!scrolled) {
+            logo.attr('src', 'assets/images/logo_0.png'); // Change the path accordingly
+            scrolled = true;
+          }
+        } else {
+          if (scrolled) {
+            logo.attr('src', 'assets/images/logo.png'); // Change the path accordingly
+            scrolled = false;
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

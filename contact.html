@@ -279,5 +279,28 @@
   <script src="assets/js/owl.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/accordions.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var logo = $(".logo_hai");
+      var scrolled = false;
+  
+      // Change logo on scroll
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          if (!scrolled) {
+            logo.attr('src', 'assets/images/logo_0.png'); // Change the path accordingly
+            scrolled = true;
+          }
+        } else {
+          if (scrolled) {
+            logo.attr('src', 'assets/images/logo.png'); // Change the path accordingly
+            scrolled = false;
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
