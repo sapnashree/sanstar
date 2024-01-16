@@ -240,18 +240,19 @@ header .navbar {
 }
 .background-header .navbar {
 	padding: 10px 0px;
+	background: white;
 }
 .background-header {
 	top: 0;
 	position: fixed;
-	background-color: black !important;
+	/* background-color: black !important; */
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
 	color: #b83c31!important;
 }
 .background-header .navbar-nav a.nav-link {
-	/* color: #1e1e1e!important; */
+	color: #1e1e1e!important;
 	color: white;
 }
 .background-header .navbar-nav .nav-link:hover,
@@ -1052,7 +1053,7 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-    background-image: linear-gradient(#85838361, #a7a7a752), url(../images/about_ban.jpg);
+    background-image: linear-gradient(#4e4e4e61, #5c5c5c52), url(../images/about_ban.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1137,10 +1138,10 @@ footer .contact-form button.filled-button:hover {
 #tabs ul li a {
 	text-transform: capitalize;
 	width: 100%;
-	padding: 30px 30px;
+	padding: 17px;
 	display: inline-block;
 	background-color: #b83c31;
-  	font-size: 20px;
+  	font-size:16px;
   	color: #121212;
   	letter-spacing: 0.5px;
   	font-weight: 700;
